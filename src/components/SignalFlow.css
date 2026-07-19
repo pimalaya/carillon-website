@@ -1,0 +1,118 @@
+.flow {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* ---- The three-node chain ---- */
+.flow__chain {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.flow__node {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.9rem 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.flow__node--accent {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-wash);
+}
+
+.flow__icon {
+  display: inline-flex;
+  color: var(--ink-soft);
+}
+
+.flow__node--accent .flow__icon {
+  color: var(--accent);
+}
+
+.flow__label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.flow__sub {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+/* The connector between nodes: a line with a moving pulse. */
+.flow__link {
+  flex: 0 0 22px;
+  align-self: center;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--rule-strong), var(--accent), var(--rule-strong));
+  background-size: 200% 100%;
+  animation: flow-pulse 2.2s linear infinite;
+}
+
+@keyframes flow-pulse {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow__link {
+    animation: none;
+  }
+}
+
+/* ---- The sample payload ---- */
+.flow__payload {
+  margin: 0;
+  background: var(--ink-900);
+  color: var(--on-dark);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+.flow__comment {
+  color: var(--on-dark-soft);
+}
+
+.flow__key {
+  color: var(--brass);
+}
+
+.flow__str {
+  color: #e7b48c;
+}
+
+.flow__num {
+  color: #9fc4a6;
+}
+
+@media (max-width: 460px) {
+  .flow__sub {
+    display: none;
+  }
+}

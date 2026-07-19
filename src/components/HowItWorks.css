@@ -1,0 +1,48 @@
+.how__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  counter-reset: none;
+}
+
+.how__card {
+  position: relative;
+  padding: 2rem 1.75rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.how__index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-wash);
+  border-radius: 50%;
+}
+
+.how__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.55rem;
+}
+
+.how__body {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+@media (max-width: 820px) {
+  .how__grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}

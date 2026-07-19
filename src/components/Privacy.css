@@ -1,0 +1,76 @@
+.privacy {
+  background: var(--ink-900);
+  color: var(--on-dark);
+}
+
+/* A dark-surface variant of the eyebrow label. */
+.eyebrow--dark {
+  color: var(--brass);
+}
+
+.privacy__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.privacy__title {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin: 0.6rem 0 1.2rem;
+}
+
+.privacy__lead {
+  font-size: 1.15rem;
+  color: var(--on-dark);
+  margin-bottom: 1rem;
+}
+
+.privacy__lead em {
+  color: var(--brass);
+  font-style: italic;
+}
+
+.privacy__aside {
+  color: var(--on-dark-soft);
+  font-size: 1rem;
+}
+
+.privacy__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.privacy__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 1.02rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule-dark);
+}
+
+.privacy__item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.privacy__check {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: 0.1rem;
+  color: var(--ink-900);
+  background: var(--brass);
+  border-radius: 50%;
+}
+
+@media (max-width: 820px) {
+  .privacy__inner {
+    grid-template-columns: 1fr;
+  }
+}

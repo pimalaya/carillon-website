@@ -1,0 +1,82 @@
+.sources__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.sources__card {
+  padding: 1.6rem 1.75rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* The available source gets a subtle accent edge. */
+.sources__card--available {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-wash);
+}
+
+.sources__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.sources__name {
+  font-size: 1.3rem;
+}
+
+.sources__protocol {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin-bottom: 0.75rem;
+}
+
+.sources__desc {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+/* ---- Status badges ---- */
+.sources__badge {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3em 0.7em;
+  border-radius: 999px;
+}
+
+.sources__badge--available {
+  color: #fff;
+  background: var(--green);
+}
+
+.sources__badge--next {
+  color: var(--accent-ink);
+  background: var(--accent-wash);
+}
+
+.sources__badge--planned {
+  color: var(--ink-soft);
+  background: rgba(42, 32, 22, 0.08);
+}
+
+.sources__foot {
+  margin-top: 1.75rem;
+  text-align: center;
+  color: var(--ink-faint);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 680px) {
+  .sources__grid {
+    grid-template-columns: 1fr;
+  }
+}

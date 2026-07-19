@@ -1,0 +1,54 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  /* Warm frosted-glass effect over whatever scrolls beneath. */
+  background: rgba(247, 241, 226, 0.82);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 1.75rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.nav__links a:hover {
+  color: var(--ink);
+}
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__icon-link {
+  display: inline-flex;
+  color: var(--ink-soft);
+}
+
+.nav__icon-link:hover {
+  color: var(--ink);
+}
+
+/* On narrow screens, drop the middle links and the github glyph;
+   keep the brand and the primary call to action. */
+@media (max-width: 760px) {
+  .nav__links,
+  .nav__icon-link {
+    display: none;
+  }
+}
