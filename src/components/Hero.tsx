@@ -9,7 +9,7 @@ export function Hero() {
     <section className="hero" id="top">
       <div className="container hero__inner">
         <div className="hero__copy">
-          <span className="eyebrow">Push for email, contacts &amp; calendars</span>
+          <span className="eyebrow">Content-free push for your PIM</span>
 
           <h1 className="hero__title">
             Real-time push for your inbox.
@@ -35,7 +35,7 @@ export function Hero() {
           </div>
 
           <p className="hero__note">
-            First watch free · No credit card · Open source
+            Free 7-day trial · No credit card · Open source
           </p>
         </div>
 

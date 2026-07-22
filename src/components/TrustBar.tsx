@@ -3,9 +3,9 @@ import './TrustBar.css'
 const items = [
   'Content-free',
   'Signed webhooks',
+  'Read-only by design',
   'Self-hostable',
   'Open source',
-  'Built on io-imap',
   'Battery-free push',
 ]
 

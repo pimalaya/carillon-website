@@ -54,9 +54,9 @@ export function SignalFlow() {
         <span className="flow__comment"># signed, content-free</span>
         {'\n'}
         {'{'}
-        {'\n'}  <span className="flow__key">"account"</span>: <span className="flow__str">"a1c9…"</span>,
+        {'\n'}  <span className="flow__key">"id"</span>:      <span className="flow__str">"9f2c1e…"</span>,
+        {'\n'}  <span className="flow__key">"account"</span>: <span className="flow__str">"fastmail"</span>,
         {'\n'}  <span className="flow__key">"event"</span>:   <span className="flow__str">"new"</span>,
-        {'\n'}  <span className="flow__key">"mailbox"</span>: <span className="flow__str">"INBOX"</span>,
         {'\n'}  <span className="flow__key">"uid"</span>:     <span className="flow__num">48213</span>
         {'\n'}
         {'}'}

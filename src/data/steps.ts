@@ -9,7 +9,7 @@ export const steps: Step[] = [
   {
     index: '01',
     title: 'Point a watch at your account',
-    body: 'Give Carillon your IMAP account and a notify URL — your own webhook, or an ntfy topic for instant phone push. Folder defaults to INBOX.',
+    body: 'Give Carillon an account to watch — an IMAP mailbox or a CardDAV address book — and a notify URL: your own webhook, or an ntfy topic for instant phone push. For mail, the folder defaults to INBOX.',
   },
   {
     index: '02',

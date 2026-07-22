@@ -15,24 +15,30 @@ export interface Plan {
 }
 
 /*
- * Pricing follows CARILLON_PLAN §9 (monetization):
- *   - The on-device client and self-hosting are always free.
+ * Pricing follows the current billing model (carillon-server
+ * docs/BILLING_MODEL.md, live in carillon-admin):
+ *   - The on-device client and self-hosting are always free and unmetered.
  *   - You pay for the WATCH — the standing server resource — via prepaid,
- *     consumable "notifier-month" credits, not permanent slots.
- *   - The first watch is free as a funnel.
+ *     consumable credits: 1 credit = one watch, one month. Sold in packs of 4.
+ *   - Ephemeral connection testing is free forever; your first watch on a
+ *     provider auto-runs free for a 7-day trial as a funnel.
+ *   - It is pay-as-you-go, not a subscription: credits never expire, nothing
+ *     recurs unless you opt into auto-renew (which only ever spends credits you
+ *     already own — no card on file).
  *
- * Numbers are indicative for the private beta; the real price lands in the
- * €3–5 band and is set on value, not on infra cost.
+ * The €2.50/credit price (packs of 4 = €10) matches the live dashboard; it is
+ * indicative for the private beta and set on value, not infra cost.
  */
 export const plans: Plan[] = [
   {
     id: 'free',
     name: 'Free',
     price: '€0',
-    cadence: 'forever',
-    tagline: 'For a single mailbox you want to keep an ear on.',
+    cadence: 'to get started',
+    tagline: 'Test any account for free, and watch your first one free for a week.',
     features: [
-      '1 active watch',
+      'Connection testing, free forever',
+      '7-day free trial on your first watch',
       'Webhook + ntfy phone push',
       'Content-free, HMAC-signed signals',
       'IMAP IDLE, real-time',
@@ -43,16 +49,18 @@ export const plans: Plan[] = [
   {
     id: 'payg',
     name: 'Pay as you go',
-    price: '€3',
+    price: '€2.50',
     cadence: 'per watch / month',
-    tagline: 'For your whole digital life — buy credits, use them as you go.',
+    tagline: 'For your whole digital life — buy credits, spend them as you go.',
     features: [
       'Unlimited watches',
-      'Prepaid “notifier-month” credits',
-      'Auto-refill with low-balance alerts',
+      '1 credit = one watch, one month',
+      'Prepaid credits in packs of 4',
+      'No expiry, no subscription',
+      'Opt-in auto-renew from your balance',
+      'Low-balance & pre-expiry alerts',
       'Every source protocol as it ships',
-      'Delivery logs & retries',
-      'Email support',
+      'Delivery logs, retries & secret rotation',
     ],
     cta: { label: 'Get early access', href: site.links.getStarted },
     featured: true,
@@ -64,11 +72,11 @@ export const plans: Plan[] = [
     cadence: 'open source',
     tagline: 'Run it on your own box and hold your own credentials.',
     features: [
-      'Unlimited everything',
+      'Unlimited, unmetered watches',
       'You keep the credentials',
       'MIT / Apache-2.0 licensed',
       'One small VPS → thousands of watches',
-      'Built on the Pimalaya io-imap core',
+      'Built on the Pimalaya protocol cores',
     ],
     cta: { label: 'View on GitHub', href: site.links.github },
   },
@@ -76,4 +84,4 @@ export const plans: Plan[] = [
 
 /* Shown as a footnote under the pricing grid. */
 export const pricingNote =
-  'Prices are indicative during the private beta. Need metered billing for a team or a product you’re building? Metered Stripe plans are available on request.'
+  'Prices are indicative during the private beta. Credits never expire and there is no subscription — you top up when you want more watches. Building on top of Carillon? Metered Stripe plans are available on request.'

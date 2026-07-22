@@ -20,30 +20,44 @@ export const statusLabels: Record<SourceStatus, string> = {
 export const sources: Source[] = [
   {
     name: 'IMAP',
-    protocol: 'IDLE',
+    protocol: 'IDLE / QRESYNC',
     description:
-      'The hard one, and the differentiator. One held connection per mailbox, so your phone holds none.',
+      'The hard one, and the differentiator. One held IDLE connection per mailbox, so your phone holds none. QRESYNC servers get full deltas; the rest get new-message pings.',
+    status: 'available',
+  },
+  {
+    name: 'CardDAV',
+    protocol: 'sync-collection',
+    description:
+      'Contacts. WebDAV has no push, so Carillon runs a light sync-token poll every few minutes and emits the very same event — near-real-time, one webhook shape.',
     status: 'available',
   },
   {
     name: 'JMAP',
     protocol: 'PushSubscription',
     description:
-      'Native push. We register a subscription pointing at Carillon and re-emit StateChange. Nearly free.',
+      'Native push. Carillon registers a subscription pointing at itself and re-emits each StateChange. Nearly free to run.',
     status: 'next',
   },
   {
-    name: 'Gmail & Graph',
-    protocol: 'Webhooks',
+    name: 'Gmail',
+    protocol: 'Pub/Sub watch',
     description:
-      'Webhook-native providers. We register their watches, handle renewal, and re-emit in one uniform shape.',
-    status: 'next',
+      'Webhook-native. Carillon registers the mailbox watch, handles renewal, and re-emits history changes in the one uniform shape.',
+    status: 'planned',
   },
   {
-    name: 'CalDAV & CardDAV',
-    protocol: 'sync-token / WebDAV-Push',
+    name: 'Microsoft Graph',
+    protocol: 'Change notifications',
     description:
-      'Contacts and calendars. A cheap sync-token poll, or WebDAV-Push where the server supports it.',
+      'Webhook-native. A Graph subscription per mailbox, renewed automatically, re-emitted as the same content-free signal.',
+    status: 'planned',
+  },
+  {
+    name: 'CalDAV',
+    protocol: 'sync-token',
+    description:
+      'Calendars, alongside contacts — the same cheap sync-token poll that already powers CardDAV.',
     status: 'planned',
   },
 ]

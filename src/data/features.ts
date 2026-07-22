@@ -14,7 +14,7 @@ export const features: Feature[] = [
   {
     icon: 'signature',
     title: 'Signed & verifiable',
-    body: 'Every delivery is HMAC-signed so your endpoint can trust it came from Carillon and wasn’t tampered with.',
+    body: 'Every delivery is HMAC-SHA256 signed, Stripe-style, so your endpoint can trust it came from Carillon — and you can rotate the signing secret with no dropped events.',
   },
   {
     icon: 'bolt',
@@ -29,7 +29,7 @@ export const features: Feature[] = [
   {
     icon: 'list',
     title: 'Retries & delivery logs',
-    body: 'Failed deliveries retry with backoff, and every attempt is logged so you always know what fired and when.',
+    body: 'Failed deliveries retry with backoff, every attempt is logged, and a live event stream lets your dashboard watch deliveries fire in real time.',
   },
   {
     icon: 'server',

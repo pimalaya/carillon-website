@@ -3,9 +3,10 @@ import { Icon } from './ui/Icon'
 import './Privacy.css'
 
 const nevers = [
-  'Never reads or stores your messages',
+  'Never reads or stores your messages or contacts',
   'Never syncs or serves content',
   'Never sends bodies, subjects, or contacts to a push provider',
+  'Opens your mailbox read-only — never writes, moves, or deletes',
   'Scoped OAuth over passwords, encrypted at rest',
 ]
 
