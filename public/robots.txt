@@ -1,0 +1,6 @@
+# Carillon — all crawlers welcome, including AI crawlers
+# (ClaudeBot, GPTBot, PerplexityBot, Google-Extended, CCBot, and friends).
+User-agent: *
+Allow: /
+
+Sitemap: https://carillon.pimalaya.org/sitemap.xml

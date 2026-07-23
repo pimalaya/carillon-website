@@ -1,4 +1,9 @@
-import { useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
+
+// useLayoutEffect warns during server render; fall back to useEffect there. The
+// hook's body is browser-only anyway, and effects don't run during pre-render.
+const useIsomorphicLayoutEffect =
+  typeof document !== 'undefined' ? useLayoutEffect : useEffect
 
 /*
  * One-shot scroll reveal. Each content block fades and rises in the first time it
@@ -26,7 +31,7 @@ const SELECTOR = [
 const STAGGER_MS = 100
 
 export function useScrollReveal() {
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const targets = Array.from(document.querySelectorAll<HTMLElement>(SELECTOR))

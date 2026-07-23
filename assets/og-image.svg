@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Letterpress: warm paper, terracotta ink, hairline frame -->
+  <rect width="1200" height="630" fill="#f7f1e2" />
+  <rect x="28" y="28" width="1144" height="574" fill="none" stroke="#e6d9bd" stroke-width="2" />
+
+  <!-- Carillon bell -->
+  <svg x="112" y="180" width="270" height="270" viewBox="0 -960 960 960">
+    <path fill="#b64d2c" d="M80-560q0-100 44.5-183.5T244-882l47 64q-60 44-95.5 111T160-560H80Zm720 0q0-80-35.5-147T669-818l47-64q75 55 119.5 138.5T880-560h-80ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
+  </svg>
+
+  <g font-family="Georgia, 'DejaVu Serif', 'Liberation Serif', serif">
+    <text x="440" y="292" font-size="120" font-weight="600" fill="#2a2016">Carillon</text>
+    <rect x="444" y="322" width="112" height="6" rx="3" fill="#b64d2c" />
+    <text x="444" y="392" font-size="33" fill="#6c5c46">Content-free push notifications &amp; webhooks</text>
+    <text x="444" y="440" font-size="28" fill="#a2917a">It watches your remotes and chimes — it never syncs.</text>
+    <text x="444" y="520" font-size="28" font-weight="600" fill="#b64d2c">carillon.pimalaya.org</text>
+  </g>
+</svg>

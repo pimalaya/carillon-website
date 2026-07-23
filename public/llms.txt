@@ -1,0 +1,21 @@
+# Carillon
+
+> Carillon is a hosted watcher that turns a change on a remote account into a small, signed, content-free webhook. It signals; it never syncs, stores, or reads your data.
+
+Carillon holds a live connection to your accounts around the clock on its servers — an IMAP mailbox held on IDLE today, a CardDAV address book, more source protocols to come. The instant something changes, it POSTs a tiny, signed, content-free ping to any URL you choose: your own webhook, or an ntfy topic for battery-free push on your phone. Your app then fetches the details itself. Carillon never syncs, stores, or reads your data.
+
+## Key facts
+
+- Content-free: payloads carry an event type and an id — never a subject, body, or contact.
+- Signed: every delivery is HMAC-SHA256 signed (Stripe-style) and verifiable.
+- Real-time: driven by IMAP IDLE, not polling.
+- Delivery: your own webhook, or ntfy / UnifiedPush for phone push. No app of Carillon's to install.
+- Read-only by design; you can self-host and hold your own credentials.
+- Pricing: pay per watch with prepaid credits — 1 credit = one watch for one month (€2), sold in packs of five, no expiry, no subscription. Your first watch runs free for 7 days. The client and self-hosting are free.
+- Open source (MIT / Apache-2.0), part of the Pimalaya suite of PIM tools in Rust.
+
+## Links
+
+- Website: https://carillon.pimalaya.org/
+- Source code: https://github.com/pimalaya
+- Pimalaya: https://pimalaya.org
