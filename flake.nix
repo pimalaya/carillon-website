@@ -37,7 +37,7 @@
             runHook postInstall
           '';
 
-          meta.description = "Marketing site for Carillon";
+          meta.description = "Marketing site for the Carillon watch server";
         };
       });
 }

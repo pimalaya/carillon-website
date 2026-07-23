@@ -1,8 +1,6 @@
 /*
- * A tiny inline-SVG icon set. Icons inherit `currentColor` and a 1.6 stroke,
- * so they take on the text colour of wherever they're placed.
- *
- * Add a new icon by dropping another entry into `paths`.
+ * Inline-SVG icon set: icons inherit currentColor, so they take the text colour
+ * of wherever they sit. Add one by dropping an entry into paths.
  */
 
 import type { ReactNode } from 'react'
@@ -60,8 +58,8 @@ const paths: Record<IconName, ReactNode> = {
 interface IconProps {
   name: IconName
   size?: number
-  /* Icons drawn from filled paths (shield, bolt, github, mastodon) look right
-     filled; line icons look right stroked. `filled` toggles between the two. */
+  /* Toggle fill vs stroke; filled and line icons each look right only one way,
+     so it defaults per filledByDefault. */
   filled?: boolean
 }
 

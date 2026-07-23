@@ -3,9 +3,9 @@ import { site } from '../config'
 export interface Plan {
   id: string
   name: string
-  /* Headline price, already formatted for display. */
+  /* Formatted for display. */
   price: string
-  /* Small text under the price, e.g. "per watch / month". Optional for free tiers. */
+  /* Sub-price line, e.g. "per watch / month". */
   cadence?: string
   tagline: string
   features: string[]
@@ -15,19 +15,13 @@ export interface Plan {
 }
 
 /*
- * Pricing follows the current billing model (carillon-backend
- * docs/BILLING_MODEL.md, live in carillon-frontend):
- *   - The on-device client and self-hosting are always free and unmetered.
- *   - You pay for the WATCH — the standing server resource — via prepaid,
- *     consumable credits: 1 credit = one watch, one month. Sold in packs of 5.
- *   - Ephemeral connection testing is free forever; your first watch on a
- *     provider auto-runs free for a 7-day trial as a funnel.
- *   - It is pay-as-you-go, not a subscription: credits never expire, nothing
- *     recurs unless you opt into auto-renew (which only ever spends credits you
- *     already own — no card on file).
- *
- * The €2/credit price (packs of 5 = €10) matches the live dashboard; it is
- * indicative for the private beta and set on value, not infra cost.
+ * Pricing mirrors the live billing model (carillon-backend docs/BILLING_MODEL.md):
+ * client and self-hosting are free and unmetered; you pay per standing watch via
+ * prepaid credits, one credit for one watch for one month, sold in packs of five.
+ * Connection testing is free forever; the first watch on a provider runs free for
+ * a 7-day trial. Pay-as-you-go, not a subscription: credits never expire and
+ * nothing recurs unless you opt into auto-renew, which only spends credits you own.
+ * The price is indicative for the private beta and set on value, not infra cost.
  */
 export const plans: Plan[] = [
   {
@@ -82,6 +76,6 @@ export const plans: Plan[] = [
   },
 ]
 
-/* Shown as a footnote under the pricing grid. */
+/* Footnote under the pricing grid. */
 export const pricingNote =
   'Prices are indicative during the private beta. Credits never expire and there is no subscription — you top up when you want more watches. Building on top of Carillon? Metered Stripe plans are available on request.'

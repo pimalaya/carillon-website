@@ -15,10 +15,7 @@ interface ButtonProps {
   className?: string
 }
 
-/*
- * All calls to action on the page are links (this is a static marketing site),
- * so Button renders an anchor rather than a <button>.
- */
+/* Every CTA on a static site is a navigation, so Button renders an anchor. */
 export function Button({
   href,
   children,

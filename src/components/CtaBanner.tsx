@@ -4,7 +4,7 @@ import { Container } from './ui/Container'
 import { Icon } from './ui/Icon'
 import './CtaBanner.css'
 
-/* Closing call to action, echoing the hero on a warm accent panel. */
+/* Closing call to action on a warm accent panel. */
 export function CtaBanner() {
   return (
     <section className="section cta on-dark">

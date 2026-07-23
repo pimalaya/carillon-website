@@ -1,9 +1,8 @@
 import './SignalFlow.css'
 
 /*
- * The hero illustration: a small "signal flow" card showing a change on a
- * remote turning into a content-free webhook, plus a sample payload so the
- * "content-free" promise is concrete rather than abstract.
+ * Hero illustration: a change on a remote becoming a content-free webhook, with
+ * a sample payload so "content-free" is concrete.
  */
 export function SignalFlow() {
   return (

@@ -1,9 +1,6 @@
 import './Logo.css'
 
-/*
- * The Carillon wordmark: a small bell glyph beside the name set in the display
- * serif. `onDark` swaps the bell fill for use in the footer.
- */
+/* Carillon wordmark: bell glyph beside the name; onDark swaps the bell fill for the footer. */
 export function Logo({ onDark = false }: { onDark?: boolean }) {
   return (
     <span className={`logo ${onDark ? 'logo--on-dark' : ''}`.trim()}>

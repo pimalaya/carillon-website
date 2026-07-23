@@ -10,10 +10,6 @@ const nevers = [
   'Scoped OAuth over passwords, encrypted at rest',
 ]
 
-/*
- * The trust section — the load-bearing differentiator. Rendered on a dark
- * surface to set it apart from the rest of the page.
- */
 export function Privacy() {
   return (
     <section className="section privacy on-dark">

@@ -1,7 +1,4 @@
-/*
- * Central place for outward-facing links and copy that repeats across sections.
- * Swap these once the real dashboard / repo / social accounts exist.
- */
+/* Outward links and repeated copy; edit these first when they move. */
 
 export const site = {
   name: 'Carillon',
@@ -9,10 +6,8 @@ export const site = {
   tagline: 'It watches your remotes and chimes — it never syncs.',
 
   links: {
-    // The dashboard (carillon-frontend + API) is live on the app subdomain; this
-    // marketing site owns the apex (carillon.pimalaya.org). Every "Start free" /
-    // "Get early access" / "Open dashboard" CTA sends the visitor to the app,
-    // whose welcome page handles magic-link sign-in.
+    // App subdomain holds the dashboard; this site owns the apex. Every CTA
+    // sends the visitor to the app, which handles magic-link sign-in.
     app: 'https://app.carillon.pimalaya.org',
     getStarted: 'https://app.carillon.pimalaya.org',
     github: 'https://github.com/pimalaya',

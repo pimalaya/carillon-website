@@ -10,13 +10,7 @@ import { Faq } from './components/Faq'
 import { CtaBanner } from './components/CtaBanner'
 import { Footer } from './components/Footer'
 
-/*
- * The whole landing page is a single vertical scroll. Section order:
- *   hero → trust cues → how it works → the privacy principle →
- *   features → sources → pricing → FAQ → closing CTA → footer.
- *
- * Each section is a self-contained component with its own co-located CSS.
- */
+/* Single vertical-scroll landing page; each section owns its co-located CSS. */
 export default function App() {
   return (
     <>

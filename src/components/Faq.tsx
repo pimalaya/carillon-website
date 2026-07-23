@@ -3,10 +3,7 @@ import { Container } from './ui/Container'
 import { SectionHeading } from './ui/SectionHeading'
 import './Faq.css'
 
-/*
- * Uses native <details>/<summary> for the accordion — accessible and
- * keyboard-friendly with no JavaScript state to manage.
- */
+/* Native details/summary accordion: accessible, no JavaScript state. */
 export function Faq() {
   return (
     <section className="section faq" id="faq">

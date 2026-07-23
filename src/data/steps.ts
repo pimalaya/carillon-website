@@ -4,7 +4,7 @@ export interface Step {
   body: string
 }
 
-/* "How it works" — three beats, mirroring the CARILLON_PLAN setup flow. */
+/* "How it works" beats, mirroring the CARILLON_PLAN setup flow. */
 export const steps: Step[] = [
   {
     index: '01',

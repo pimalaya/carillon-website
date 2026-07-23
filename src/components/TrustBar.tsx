@@ -9,7 +9,7 @@ const items = [
   'Battery-free push',
 ]
 
-/* A quiet strip of trust cues between the hero and the first content section. */
+/* Trust cues between the hero and the first content section. */
 export function TrustBar() {
   return (
     <div className="trustbar">

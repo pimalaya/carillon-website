@@ -1,7 +1,7 @@
 export interface Feature {
   title: string
   body: string
-  /* Name of the icon to render — see components/ui/Icon.tsx */
+  /* Icon name; see components/ui/Icon.tsx. */
   icon: string
 }
 
