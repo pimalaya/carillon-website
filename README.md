@@ -41,7 +41,7 @@ npm run build
 
 ## Usage
 
-Run `npm run dev` for a hot-reloading dev server, `npm run build` for the production bundle, and `npm run preview` to serve that bundle locally. The outward links live in src/config.ts, the section content in src/data, and the design tokens in src/styles/theme.css; CONTRIBUTING.md and the [docs](./docs) folder cover where to edit what.
+Run `npm run dev` for a hot-reloading dev server, `npm run build` for the production bundle, and `npm run preview` to serve that bundle locally. The outward links live in src/config.ts, the section content in src/data, and the design tokens in src/styles/theme.css; CONTRIBUTING.md and the [cairn](./cairn) folder cover where to edit what.
 
 ## License
 
