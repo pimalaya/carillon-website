@@ -30,6 +30,7 @@ export function buildStructuredData(): Record<string, unknown>[] {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: site.name,
+    alternateName: 'Account-change notifier',
     url: `${BASE}/`,
     applicationCategory: 'CommunicationApplication',
     operatingSystem: 'Web',

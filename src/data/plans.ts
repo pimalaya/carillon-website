@@ -15,7 +15,7 @@ export interface Plan {
 }
 
 /*
- * Pricing mirrors the live billing model (carillon-backend docs/BILLING_MODEL.md):
+ * Pricing mirrors the live billing model (carillon-backend cairn/spec/billing.md):
  * client and self-hosting are free and unmetered; you pay per standing watch via
  * prepaid credits, one credit for one watch for one month, sold in packs of five.
  * Connection testing is free forever; the first watch on a provider runs free for

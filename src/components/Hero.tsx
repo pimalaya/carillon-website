@@ -9,12 +9,12 @@ export function Hero() {
     <section className="hero" id="top">
       <div className="container hero__inner">
         <div className="hero__copy">
-          <span className="eyebrow">Content-free push for your PIM</span>
+          <span className="eyebrow">Account-change notifier</span>
 
           <h1 className="hero__title">
-            Real-time push for your accounts.
+            Get notified the instant your accounts change.
             <br />
-            <span className="hero__title-accent">Content-free by design.</span>
+            <span className="hero__title-accent">It signals, never syncs.</span>
           </h1>
 
           <p className="hero__lead">

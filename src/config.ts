@@ -3,7 +3,7 @@
 export const site = {
   name: 'Carillon',
   domain: 'carillon.pimalaya.org',
-  tagline: 'It watches your remotes and chimes; it never syncs.',
+  tagline: 'A hosted watcher that notifies you the instant your email, contacts, or calendar change.',
 
   links: {
     // App subdomain holds the dashboard; this site owns the apex. Every CTA

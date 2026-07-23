@@ -11,20 +11,20 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <title>Carillon — content-free push notifications &amp; webhooks</title>
+    <title>Carillon: account-change notifier for email, contacts &amp; calendar</title>
     <meta
       name="description"
-      content="Carillon holds a live connection to your accounts and sends a small, signed, content-free ping the instant your mail or contacts change. It signals — it never syncs, stores, or reads your data."
+      content="Carillon is an account-change notifier: a hosted watcher that keeps a live connection to your email, contacts, and calendar and pings you the instant something changes, by signed webhook or phone push. It signals; it never syncs or reads your data."
     />
     <link rel="canonical" href="https://carillon.pimalaya.org/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Carillon" />
-    <meta property="og:title" content="Carillon — content-free push notifications & webhooks" />
+    <meta property="og:title" content="Carillon: account-change notifier for email, contacts &amp; calendar" />
     <meta
       property="og:description"
-      content="A hosted watcher that turns a change on a remote into a signed, content-free webhook. It signals; it never syncs."
+      content="A hosted watcher that pings you the instant your email, contacts, or calendar change. Real-time notifications by webhook or phone; it signals, never syncs."
     />
     <meta property="og:url" content="https://carillon.pimalaya.org/" />
     <meta property="og:locale" content="en_US" />
@@ -33,20 +33,23 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Carillon — content-free push notifications and webhooks"
+      content="Carillon: account-change notifier for email, contacts, and calendar"
     />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Carillon — content-free push notifications & webhooks" />
+    <meta name="twitter:title" content="Carillon: account-change notifier for email, contacts &amp; calendar" />
     <meta
       name="twitter:description"
-      content="A hosted watcher that turns a change on a remote into a signed, content-free webhook. It signals; it never syncs."
+      content="A hosted watcher that pings you the instant your email, contacts, or calendar change. Real-time notifications by webhook or phone; it signals, never syncs."
     />
     <meta name="twitter:image" content="https://carillon.pimalaya.org/og-image.png" />
+
+    <!-- Build-time JSON-LD, injected by prerender.js. -->
+    <!--app-head-->
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!--app-html--></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

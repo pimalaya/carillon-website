@@ -1,7 +1,7 @@
 {
   "name": "Carillon",
   "short_name": "Carillon",
-  "description": "Content-free push notifications and webhooks for your accounts.",
+  "description": "A hosted watcher that notifies you the instant your email, contacts, or calendar change.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7f1e2",

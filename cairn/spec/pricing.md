@@ -9,7 +9,7 @@ status: current
 The pricing section mirrors the live billing model in `carillon-backend` rather than restating it, so the site and the product never drift. The client and self-hosting are free and unmetered, and a user pays per standing watch through prepaid credits.
 
 ### Requirement: Mirror the billing model
-The pricing section SHALL mirror the live billing model in `carillon-backend` (`docs/BILLING_MODEL.md`) rather than restate it.
+The pricing section SHALL mirror the live billing model in `carillon-backend` (`cairn/spec/billing.md`) rather than restate it.
 
 ### Requirement: Free client and self-hosting
 The client and self-hosting SHALL be presented as free and unmetered.
