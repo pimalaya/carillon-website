@@ -91,8 +91,8 @@ export function Footer() {
             Part of{' '}
             <a href={site.links.pimalaya} target="_blank" rel="noopener noreferrer">
               Pimalaya
-            </a>{' '}
-            — open-source PIM tools in Rust.
+            </a>,{' '}
+            open-source PIM tools in Rust.
           </p>
         </div>
       </Container>

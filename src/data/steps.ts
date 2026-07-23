@@ -9,12 +9,12 @@ export const steps: Step[] = [
   {
     index: '01',
     title: 'Point a watch at your account',
-    body: 'Give Carillon an account to watch — an IMAP mailbox or a CardDAV address book — and a notify URL: your own webhook, or an ntfy topic for instant phone push. For mail, the folder defaults to INBOX.',
+    body: 'Give Carillon an account to watch (an IMAP mailbox or a CardDAV address book) and a notify URL: your own webhook, or an ntfy topic for instant phone push. For mail, the folder defaults to INBOX.',
   },
   {
     index: '02',
     title: 'We hold the connection',
-    body: 'Carillon keeps a live connection open around the clock on our servers — the kind of standing connection that’s impractical to hold yourself, and a battery-killer on a phone.',
+    body: 'Carillon keeps a live connection open around the clock on our servers: the kind of standing connection that’s impractical to hold yourself, and a battery-killer on a phone.',
   },
   {
     index: '03',

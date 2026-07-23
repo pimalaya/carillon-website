@@ -14,7 +14,7 @@ export function CtaBanner() {
             Stop holding a connection you were never meant to keep.
           </h2>
           <p className="cta__lead">
-            Let Carillon hold it instead — and chime the moment it matters.
+            Let Carillon hold it instead: it chimes the moment it matters.
           </p>
           <div className="cta__actions">
             <Button href={site.links.getStarted} size="lg">

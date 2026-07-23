@@ -29,7 +29,7 @@ export const sources: Source[] = [
     name: 'CardDAV',
     protocol: 'sync-collection',
     description:
-      'Contacts. WebDAV has no push, so Carillon runs a light sync-token poll every few minutes and emits the very same event — near-real-time, one webhook shape.',
+      'Contacts. WebDAV has no push, so Carillon runs a light sync-token poll every few minutes and emits the very same event: near-real-time, one webhook shape.',
     status: 'available',
   },
   {
@@ -57,7 +57,7 @@ export const sources: Source[] = [
     name: 'CalDAV',
     protocol: 'sync-token',
     description:
-      'Calendars, alongside contacts — the same cheap sync-token poll that already powers CardDAV.',
+      'Calendars, alongside contacts: the same cheap sync-token poll that already powers CardDAV.',
     status: 'planned',
   },
 ]

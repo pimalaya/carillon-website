@@ -45,7 +45,7 @@ export const plans: Plan[] = [
     name: 'Pay as you go',
     price: '€2',
     cadence: 'per watch / month',
-    tagline: 'For your whole digital life — buy credits, spend them as you go.',
+    tagline: 'For your whole digital life: buy credits, spend them as you go.',
     features: [
       'Add as many watches as you fund',
       '1 credit = one watch, one month',
@@ -78,4 +78,4 @@ export const plans: Plan[] = [
 
 /* Footnote under the pricing grid. */
 export const pricingNote =
-  'Prices are indicative during the private beta. Credits never expire and there is no subscription — you top up when you want more watches. Building on top of Carillon? Metered Stripe plans are available on request.'
+  'Prices are indicative during the private beta. Credits never expire and there is no subscription; you top up when you want more watches. Building on top of Carillon? Metered Stripe plans are available on request.'

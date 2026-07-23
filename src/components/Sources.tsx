@@ -10,7 +10,7 @@ export function Sources() {
         <SectionHeading
           eyebrow="Sources"
           title="One webhook format, every protocol"
-          lead="Carillon absorbs each protocol’s quirks and emits a single, uniform event — whatever it’s watching. The list grows; the payload never does."
+          lead="Carillon absorbs each protocol’s quirks and emits a single, uniform event, whatever it’s watching. The list grows; the payload never does."
         />
 
         <ul className="sources__grid">
@@ -29,7 +29,7 @@ export function Sources() {
         </ul>
 
         <p className="sources__foot">
-          POP3, Exchange Web Services, and ActiveSync are deliberately out of scope —
+          POP3, Exchange Web Services, and ActiveSync are deliberately out of scope:
           legacy, poll-only, or proprietary.
         </p>
       </Container>

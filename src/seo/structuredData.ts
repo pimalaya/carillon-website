@@ -41,7 +41,7 @@ export function buildStructuredData(): Record<string, unknown>[] {
       price: '0',
       priceCurrency: 'EUR',
       description:
-        'Free to start — your first watch runs free for 7 days. Then €2 per watch per month via prepaid credits, no subscription. Self-hosting is free and open source.',
+        'Free to start: your first watch runs free for 7 days. Then €2 per watch per month via prepaid credits, no subscription. Self-hosting is free and open source.',
     },
   }
 

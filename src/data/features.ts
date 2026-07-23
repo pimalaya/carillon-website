@@ -9,17 +9,17 @@ export const features: Feature[] = [
   {
     icon: 'shield',
     title: 'Content-free by design',
-    body: 'Payloads carry an event type and an id — never a subject, body, or contact. Your push provider learns nothing.',
+    body: 'Payloads carry an event type and an id: never a subject, body, or contact. Your push provider learns nothing.',
   },
   {
     icon: 'signature',
     title: 'Signed & verifiable',
-    body: 'Every delivery is HMAC-SHA256 signed, Stripe-style, so your endpoint can trust it came from Carillon — and you can rotate the signing secret with no dropped events.',
+    body: 'Every delivery is HMAC-SHA256 signed, Stripe-style, so your endpoint can trust it came from Carillon; you can rotate the signing secret with no dropped events.',
   },
   {
     icon: 'bolt',
     title: 'Real-time, not polling',
-    body: 'IMAP IDLE means you hear about a change the instant it happens — no five-minute refresh, no missed mail.',
+    body: 'IMAP IDLE means you hear about a change the instant it happens: no five-minute refresh, no missed mail.',
   },
   {
     icon: 'phone',

@@ -12,7 +12,7 @@ export function Pricing() {
         <SectionHeading
           eyebrow="Pricing"
           title="Pay for the watch, nothing else"
-          lead="The on-device client and self-hosting are always free. You only pay for the standing connection Carillon holds on your behalf — as prepaid credits, never a locked-in subscription."
+          lead="The on-device client and self-hosting are always free. You only pay for the standing connection Carillon holds on your behalf: prepaid credits, never a locked-in subscription."
         />
 
         <div className="pricing__grid">

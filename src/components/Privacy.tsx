@@ -6,7 +6,7 @@ const nevers = [
   'Never reads or stores your messages or contacts',
   'Never syncs or serves content',
   'Never sends bodies, subjects, or contacts to a push provider',
-  'Opens your mailbox read-only — never writes, moves, or deletes',
+  'Opens your mailbox read-only: never writes, moves, or deletes',
   'Scoped OAuth over passwords, encrypted at rest',
 ]
 
@@ -19,14 +19,14 @@ export function Privacy() {
             <span className="eyebrow eyebrow--dark">The principle</span>
             <h2 className="privacy__title">Signal, never sync.</h2>
             <p className="privacy__lead">
-              Carillon tells you that <em>something changed</em> — and stops there.
-              The rich “Email from Alice — Q3 budget” notification is built on your
+              Carillon tells you that <em>something changed</em>; it stops there.
+              The rich “Email from Alice: Q3 budget” notification is built on your
               own device, which already has the keys. The push provider only ever
               sees a chime.
             </p>
             <p className="privacy__aside">
               That single line is what keeps Carillon thin, cheap, low-liability,
-              and easy to trust — unlike the sync-everything products it sits beside.
+              and easy to trust, unlike the sync-everything products it sits beside.
             </p>
           </div>
 
