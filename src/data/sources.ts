@@ -22,7 +22,7 @@ export const sources: Source[] = [
     name: 'IMAP',
     protocol: 'IDLE / QRESYNC',
     description:
-      'The hard one, and the differentiator. One held IDLE connection per mailbox, so your phone holds none. QRESYNC servers get full deltas; the rest get new-message pings.',
+      'The hard one, and the differentiator. One held IDLE connection per mailbox, so nothing on your side has to. QRESYNC servers get full deltas; the rest get new-message pings.',
     status: 'available',
   },
   {

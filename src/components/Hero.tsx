@@ -12,15 +12,15 @@ export function Hero() {
           <span className="eyebrow">Content-free push for your PIM</span>
 
           <h1 className="hero__title">
-            Real-time push for your inbox.
+            Real-time push for your accounts.
             <br />
             <span className="hero__title-accent">Content-free by design.</span>
           </h1>
 
           <p className="hero__lead">
-            Carillon holds the connection your phone can’t — IMAP IDLE — and the
-            instant something changes it sends a small, signed, content-free ping to
-            any URL you choose. It watches. It never syncs, stores, or reads your mail.
+            Carillon holds a live connection to your accounts around the clock, and
+            the instant one changes, it sends a small, signed, content-free ping to any
+            URL you choose. It watches. It never syncs, stores, or reads your data.
           </p>
 
           <div className="hero__actions">
@@ -35,7 +35,7 @@ export function Hero() {
           </div>
 
           <p className="hero__note">
-            Free 7-day trial · No credit card · Open source
+            First watch free for 7 days · No credit card · Open source
           </p>
         </div>
 

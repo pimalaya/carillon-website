@@ -86,7 +86,7 @@ export function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <p>© 2026 Carillon</p>
+          <p>© 2026 Clément Douin</p>
           <p>
             Part of{' '}
             <a href={site.links.pimalaya} target="_blank" rel="noopener noreferrer">

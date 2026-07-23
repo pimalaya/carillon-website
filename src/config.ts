@@ -18,6 +18,6 @@ export const site = {
     pimalaya: 'https://pimalaya.org',
     mastodon: 'https://fosstodon.org/@pimalaya',
     matrix: 'https://matrix.to/#/#pimalaya:matrix.org',
-    email: 'mailto:carillon@pimalaya.org',
+    email: 'mailto:pimalaya.org@posteo.net',
   },
 } as const

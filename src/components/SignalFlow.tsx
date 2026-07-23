@@ -16,7 +16,7 @@ export function SignalFlow() {
               <path d="M4 7l8 6 8-6" />
             </svg>
           </span>
-          <span className="flow__label">Your inbox</span>
+          <span className="flow__label">Your account</span>
           <span className="flow__sub">change</span>
         </li>
 
@@ -25,8 +25,8 @@ export function SignalFlow() {
         <li className="flow__node flow__node--accent">
           <span className="flow__icon" aria-hidden="true">
             {/* bell */}
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 3.6a1.3 1.3 0 0 0-1.3 1.3v.5A4.7 4.7 0 0 0 7.3 10c0 2.7-.8 3.85-1.36 4.5-.4.48-.06 1.25.56 1.25h11c.62 0 .96-.77.56-1.25C17.5 13.85 16.7 12.7 16.7 10a4.7 4.7 0 0 0-3.4-4.6v-.5A1.3 1.3 0 0 0 12 3.6Z" />
+            <svg width="20" height="20" viewBox="0 -960 960 960" fill="currentColor">
+              <path d="M80-560q0-100 44.5-183.5T244-882l47 64q-60 44-95.5 111T160-560H80Zm720 0q0-80-35.5-147T669-818l47-64q75 55 119.5 138.5T880-560h-80ZM160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
             </svg>
           </span>
           <span className="flow__label">Carillon</span>

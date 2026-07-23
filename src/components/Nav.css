@@ -5,8 +5,8 @@
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  /* Warm frosted-glass effect over whatever scrolls beneath. */
-  background: rgba(247, 241, 226, 0.82);
+  /* Near-white frosted-glass effect over whatever scrolls beneath. */
+  background: rgba(255, 255, 255, 0.86);
   backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--rule);
 }

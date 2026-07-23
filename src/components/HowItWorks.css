@@ -1,8 +1,11 @@
 .how__grid {
+  /* Numbered via the .how__index badges, not the native ol marker. */
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  counter-reset: none;
 }
 
 .how__card {

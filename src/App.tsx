@@ -9,9 +9,12 @@ import { Pricing } from './components/Pricing'
 import { Faq } from './components/Faq'
 import { CtaBanner } from './components/CtaBanner'
 import { Footer } from './components/Footer'
+import { useScrollReveal } from './hooks/useScrollReveal'
 
 /* Single vertical-scroll landing page; each section owns its co-located CSS. */
 export default function App() {
+  useScrollReveal()
+
   return (
     <>
       <Nav />

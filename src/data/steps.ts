@@ -14,7 +14,7 @@ export const steps: Step[] = [
   {
     index: '02',
     title: 'We hold the connection',
-    body: 'Carillon keeps a live IMAP IDLE connection open around the clock on our servers — the standing connection your phone can’t hold without draining the battery.',
+    body: 'Carillon keeps a live connection open around the clock on our servers — the kind of standing connection that’s impractical to hold yourself, and a battery-killer on a phone.',
   },
   {
     index: '03',

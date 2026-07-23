@@ -11,7 +11,7 @@ export function CtaBanner() {
       <Container>
         <div className="cta__panel">
           <h2 className="cta__title">
-            Stop holding a connection your phone was never built to keep.
+            Stop holding a connection you were never meant to keep.
           </h2>
           <p className="cta__lead">
             Let Carillon hold it instead — and chime the moment it matters.
