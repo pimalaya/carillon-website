@@ -25,7 +25,7 @@
           pname = "carillon-website";
           version = "0.1.0";
           src = ./.;
-          npmDepsHash = "sha256-VD1Y5IY2FLVVcVRZPShqA6W9L5txF3M9Y/6d5pNuev4=";
+          npmDepsHash = "sha256-QTrN0sZ99C3hdme9WOdu95PxaDqXUA7yFAxEuyeGYmE=";
 
           # Static brochure: no runtime API. Outward links are baked into the
           # source (src/config.ts), so there is no build-time env to set.
