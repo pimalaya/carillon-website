@@ -22,7 +22,7 @@ export const faqs: Faq[] = [
   {
     question: 'What are credits?',
     answer:
-      'Prepaid, consumable credits — one credit runs one watch for one month, and one credit is €2.50. You buy them in packs of four (€10) and spend them as you go, so you top up when you need more watches and let the balance run down when you need fewer. Credits never expire and there is no subscription; opt-in auto-renew simply pulls the next credit from your balance when a watch is about to lapse — no card is ever charged automatically.',
+      'Prepaid, consumable credits — one credit runs one watch for one month, and one credit is €2. You buy them in packs of five (€10) and spend them as you go, so you top up when you need more watches and let the balance run down when you need fewer. Credits never expire and there is no subscription; opt-in auto-renew simply pulls the next credit from your balance when a watch is about to lapse — no card is ever charged automatically.',
   },
   {
     question: 'What does a webhook actually look like?',

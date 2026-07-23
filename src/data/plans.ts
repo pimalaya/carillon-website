@@ -15,18 +15,18 @@ export interface Plan {
 }
 
 /*
- * Pricing follows the current billing model (carillon-server
- * docs/BILLING_MODEL.md, live in carillon-admin):
+ * Pricing follows the current billing model (carillon-backend
+ * docs/BILLING_MODEL.md, live in carillon-frontend):
  *   - The on-device client and self-hosting are always free and unmetered.
  *   - You pay for the WATCH — the standing server resource — via prepaid,
- *     consumable credits: 1 credit = one watch, one month. Sold in packs of 4.
+ *     consumable credits: 1 credit = one watch, one month. Sold in packs of 5.
  *   - Ephemeral connection testing is free forever; your first watch on a
  *     provider auto-runs free for a 7-day trial as a funnel.
  *   - It is pay-as-you-go, not a subscription: credits never expire, nothing
  *     recurs unless you opt into auto-renew (which only ever spends credits you
  *     already own — no card on file).
  *
- * The €2.50/credit price (packs of 4 = €10) matches the live dashboard; it is
+ * The €2/credit price (packs of 5 = €10) matches the live dashboard; it is
  * indicative for the private beta and set on value, not infra cost.
  */
 export const plans: Plan[] = [
@@ -49,13 +49,13 @@ export const plans: Plan[] = [
   {
     id: 'payg',
     name: 'Pay as you go',
-    price: '€2.50',
+    price: '€2',
     cadence: 'per watch / month',
     tagline: 'For your whole digital life — buy credits, spend them as you go.',
     features: [
       'Unlimited watches',
       '1 credit = one watch, one month',
-      'Prepaid credits in packs of 4',
+      'Prepaid credits in packs of 5',
       'No expiry, no subscription',
       'Opt-in auto-renew from your balance',
       'Low-balance & pre-expiry alerts',

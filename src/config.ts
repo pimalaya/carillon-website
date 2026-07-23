@@ -11,7 +11,7 @@ export const site = {
   // These are placeholders during the design/beta stage. Point them at the real
   // dashboard and repository when they exist.
   links: {
-    // The dashboard (carillon-admin) is served at the origin root — there is no
+    // The dashboard (carillon-frontend) is served at the origin root — there is no
     // /app subpath. Not live yet.
     app: 'https://carillon.pimalaya.org',
     getStarted: 'mailto:carillon@pimalaya.org?subject=Carillon%20early%20access',

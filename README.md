@@ -63,10 +63,10 @@ the component. There is no CSS framework — just plain CSS with the tokens from
   build-time magic, so it's easy to hand off. The Pimalaya "letterpress" palette
   (warm paper, brown ink, terracotta accent) is carried over from `pimalaya.org`.
 - **The FAQ** uses native `<details>`/`<summary>` — accessible, no JS state.
-- **The pricing** mirrors the live billing model in `carillon-server`
-  (`docs/BILLING_MODEL.md`) and `carillon-admin`: free client + self-host, pay only
+- **The pricing** mirrors the live billing model in `carillon-backend`
+  (`docs/BILLING_MODEL.md`) and `carillon-frontend`: free client + self-host, pay only
   for the standing watch via prepaid credits — 1 credit = one watch for one month,
-  sold in packs of 4 (€2.50 each). Not a subscription; credits never expire. Numbers
+  sold in packs of 5 (€2 each). Not a subscription; credits never expire. Numbers
   are indicative for the private beta.
 - **Fonts** use system stacks (serif for display, system sans for UI) so there are
   no webfont downloads. Swap to bespoke fonts in `theme.css` if desired.

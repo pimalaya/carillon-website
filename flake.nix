@@ -1,5 +1,5 @@
 {
-  description = "Charlie frontend2 development environment";
+  description = "Carillon website";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
