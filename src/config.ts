@@ -8,13 +8,13 @@ export const site = {
   domain: 'carillon.pimalaya.org',
   tagline: 'It watches your remotes and chimes — it never syncs.',
 
-  // These are placeholders during the design/beta stage. Point them at the real
-  // dashboard and repository when they exist.
   links: {
-    // The dashboard (carillon-frontend) is served at the origin root — there is no
-    // /app subpath. Not live yet.
-    app: 'https://carillon.pimalaya.org',
-    getStarted: 'mailto:carillon@pimalaya.org?subject=Carillon%20early%20access',
+    // The dashboard (carillon-frontend + API) is live on the app subdomain; this
+    // marketing site owns the apex (carillon.pimalaya.org). Every "Start free" /
+    // "Get early access" / "Open dashboard" CTA sends the visitor to the app,
+    // whose welcome page handles magic-link sign-in.
+    app: 'https://app.carillon.pimalaya.org',
+    getStarted: 'https://app.carillon.pimalaya.org',
     github: 'https://github.com/pimalaya',
     selfHostGuide: 'https://github.com/pimalaya',
     docs: 'https://github.com/pimalaya',

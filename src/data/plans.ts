@@ -62,7 +62,7 @@ export const plans: Plan[] = [
       'Every source protocol as it ships',
       'Delivery logs, retries & secret rotation',
     ],
-    cta: { label: 'Get early access', href: site.links.getStarted },
+    cta: { label: 'Start watching', href: site.links.getStarted },
     featured: true,
   },
   {
